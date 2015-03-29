@@ -21,7 +21,6 @@ import java.io.File;
 
 public class DisplayColorCalibration {
     private static final String COLOR_FILE = "/sys/devices/platform/kcal_ctrl.0/kcal";
-
     public static boolean isSupported() {
         return new File(COLOR_FILE).exists();
     }
